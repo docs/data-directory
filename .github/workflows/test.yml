@@ -11,12 +11,6 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v2
-
-      - name: Use node modules cache
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         
       - name: Setup node
         uses: actions/setup-node@v1
