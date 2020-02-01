@@ -1,6 +1,6 @@
 {
   "name": "@github-docs/data-directory",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Recursively load a directory of YAML, JSON, and Markdown files into a JavaScript object.",
   "repository": "https://github.com/docs/data-directory",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^24.9.0",
+    "semantic-release": "^17.0.2",
     "standard": "^14.3.1"
   },
   "dependencies": {
@@ -19,6 +20,8 @@
     "walk-sync": "^2.0.2"
   },
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   }
 }
