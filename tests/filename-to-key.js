@@ -9,7 +9,7 @@ describe('filename-to-key', () => {
     expect(filenameToKey('/foo/bar/baz.txt')).toBe('foo.bar.baz')
   })
 
-  test.skip('supports MS Windows paths', () => {
+  test('supports MS Windows paths', () => {
     expect(filenameToKey('path\\to\\file.txt')).toBe('path.to.file')
   })
 })
